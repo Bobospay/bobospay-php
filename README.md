@@ -1,4 +1,4 @@
-# Bobospay PHP [![Build Status](https://travis-ci.org/bobospay/bobospay-php.svg?branch=master)](https://travis-ci.org/bobospay/bobospay-php)
+# Bobospay PHP
 The Bobospay PHP library provides convenient access to the Bobospay API from applications written in the PHP language. It includes a pre-defined set of classes for API resources that initialize themselves dynamically from API responses which makes it compatible with a wide range of versions of the Bobospay API.
 
 You can sign up for a Bobospay account at https://bobospay.com.
@@ -53,18 +53,4 @@ Install dependencies:
 
 ``` bash
 composer install
-```
-
-## Tests
-
-Install dependencies as mentioned above (which will resolve [PHPUnit](http://packagist.org/packages/phpunit/phpunit)), then you can run the test suite:
-
-```bash
-./vendor/bin/phpunit
-```
-
-Or to run an individual test file:
-
-```bash
-./vendor/bin/phpunit tests/UtilTest.php
 ```
