@@ -178,7 +178,7 @@ Bobospay::setEnvironment('sandbox');
 $transaction = Transaction::create([
     'description' => 'Payment for order #1234',
     'amount' => 1000,
-    'currency' => ['iso' => 'XOF'],
+    'currency' => 'XOF',
     'callback_url' => 'https://example.com/callback'
 ]);
 
