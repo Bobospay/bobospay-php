@@ -85,7 +85,7 @@ Bobospay::setEnvironment('sandbox');
 $transaction = Transaction::create([
     'note' => 'Payment for order #1234',
     'amount' => 1000, // Amount in smallest currency unit (e.g., cents)
-    'currency' => ['iso' => 'XOF'],
+    'currency' => 'XOF',
     'callback_url' => 'https://example.com/callback',
     'customer' => ['id' => 1] // Customer ID from previous example, you use email, or provide all customer details
     'custom_data' => ['order_id' => '1234']
@@ -94,7 +94,7 @@ $transaction = Transaction::create([
 //$transaction = Transaction::create([
 //    'description' => 'Payment for order #1234',
 //    'amount' => 1000, // Amount in smallest currency unit (e.g., cents)
-//    'currency' => ['iso' => 'XOF'],
+//    'currency' => 'XOF',
 //    'callback_url' => 'https://example.com/callback',
 //    'customer' => [
 //        'firstname' => 'John',
